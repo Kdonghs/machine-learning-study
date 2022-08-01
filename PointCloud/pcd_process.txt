@@ -1,0 +1,14 @@
+if point cloud file is bin
+    0.bin to pcd transform
+
+1.Voxel Grid Down sampling
+    -voxel grid: cube in 3d
+    -to deal with it efficiently
+    -If you use the original data as it is, there is a lot of information,
+    but it takes too much time to process the data.
+    -A method of keeping only one point inside the Voxel Grid and filtering the rest to remove it
+    -voxel_size use 0.1m, 0.2m etc
+    -ROI (Region Of Interest): How to downsampling based on area
+
+2.use to RANSAC from object, road classifications
+    -It is a simple and effective algorithm that distinguishes inliers from outliers.
