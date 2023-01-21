@@ -73,7 +73,7 @@ for epoch in range(10):
 
     print('[%d] loss: %.3f' % (epoch + 1, running_loss / len(trainloader)))
 
-PATH = './cifar_net.pth' # 모델 저장 경로
+PATH = 'LSTM/data/cifar_net.pth'  # 모델 저장 경로
 torch.save(net.state_dict(), PATH) # 모델 저장장
 
 correct = 0
